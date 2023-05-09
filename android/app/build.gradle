@@ -60,6 +60,19 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    flavorDimensions "app"
+
+    productFlavors {
+        akaso {
+            dimension "app"
+            applicationId "com.example.akaso"
+        }
+        infos {
+            dimension "app"
+            applicationId "com.example.infos"
+        }
+    }
 }
 
 flutter {
